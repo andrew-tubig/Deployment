@@ -3,11 +3,11 @@ import tensorflow as tf
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-  model=tf.keras.models.load_model('plant_classifier.hdf5')
+  model=tf.keras.models.load_model('animal.hdf5')
   return model
 model=load_model()
 st.write("""
-# Weather Classification"""
+# Animal (Dog vs Panda) Classification"""
 )
 file=st.file_uploader("Choose a photo",type=["jpg","png"])
 A
