@@ -3,7 +3,7 @@ import tensorflow as tf
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-  model=tf.keras.models.load_model('animal.hdf5')
+  model=tf.keras.models.load_model('animal4.hdf5')
   return model
 model=load_model()
 st.write("""
@@ -27,6 +27,6 @@ else:
     image=Image.open(file)
     st.image(image,use_column_width=True)
     prediction=import_and_predict(image,model)
-    class_names=['Cloudy','Rain','Shine','Sunrise',]
+    class_names=['Dog','Panda']
     string="OUTPUT : "+class_names[np.argmax(prediction)]
     st.success(string)
