@@ -10,7 +10,7 @@ st.write("""
 # Animal (Dog vs Panda) Classification"""
 )
 file=st.file_uploader("Choose a photo",type=["jpg","png"])
-A
+
 import cv2
 from PIL import Image,ImageOps
 import numpy as np
