@@ -3,7 +3,7 @@ import tensorflow as tf
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-  model=tf.keras.models.load_model('animal4.hdf5')
+  model=tf.keras.models.load_model('animal5.hdf5')
   return model
 model=load_model()
 st.write("""
